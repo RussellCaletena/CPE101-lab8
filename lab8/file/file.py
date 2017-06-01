@@ -16,8 +16,10 @@ return(1): Line {} ({} chars): {}.
 
 def lineDetails(fileName):
     fin = open(fileName)
+    wordsList = []
     for line in fin:
         words = line.split()
-    print (words)
+        wordsList.append(words)
+    print (wordsList)
 
-lineDetails(in1.txt)
+lineDetails('in.txt')
