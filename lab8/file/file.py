@@ -13,3 +13,11 @@ Get number of characters in the line
 Get the text on each line
 return(1): Line {} ({} chars): {}.
 '''
+
+def lineDetails(fileName):
+    fin = open(fileName)
+    for line in fin:
+        words = line.split()
+    print (words)
+
+lineDetails(in1.txt)
