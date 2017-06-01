@@ -16,19 +16,10 @@ return(1): Line {} ({} chars): {}.
 
 def lineDetails(fileName):
     fin = open(fileName)
-    wordsList = []
+    lineNumber = -1
     for line in fin:
-        #words = line.split()
-        #wordsList.append(words)
         text = line
-        #print (len(fin.readlines()))
-        #a = fin.readline()
-        #b = fin.readline()
-        #print (a)
-        #print (len(a)-1)
-        #print (b)
-        #print (len(b)-1)
-        #print (wordsList)
-        print ('Line 0 (0 chars): {}'.format(text))
-
+        textLength = len(text)-1
+        lineNumber += 1
+        print ('Line {} ({} chars): {}'.format(lineNumber, textLength, text))
 lineDetails('in.txt')
