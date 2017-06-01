@@ -1,3 +1,9 @@
+# Lab8
+#
+# Name: Russell Caletena
+# Instructor: S. Einakian
+# Section: 5
+
 import unittest
 from objects import *
 
@@ -17,4 +23,3 @@ class TestCases(unittest.TestCase):
 # Run the unit tests.
 if __name__ == '__main__':
    unittest.main()
-
