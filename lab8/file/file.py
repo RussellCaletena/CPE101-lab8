@@ -22,4 +22,5 @@ def lineDetails(fileName):
         textLength = len(text)-1
         lineNumber += 1
         print ('Line {} ({} chars): {}'.format(lineNumber, textLength, text))
+        
 lineDetails('in.txt')
