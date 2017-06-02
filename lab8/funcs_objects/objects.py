@@ -10,5 +10,8 @@ class Point(object):
         self.y = newY
     pass
 
-class Circle(self, radius):
+class Circle(object):
+    def __init__(self, center, radius):
+        self.center = circleCenter
+        self.radius = circleRadius
     pass
