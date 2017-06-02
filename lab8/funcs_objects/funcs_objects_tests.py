@@ -8,14 +8,15 @@ import unittest
 from objects import *
 
 class TestCases(unittest.TestCase):
-   def test_point(self):
-      # Add code here.
-      pass
+    def test_point(self):
+        self.assertEqual(objects.e)
+        self.assertEqual()
+        pass
 
-
-   def test_circle(self):
-      # Add code here.
-      pass
+    def test_circle(self):
+        self.assertEqual()
+        self.assertEqual()
+        pass
 
    # Add other testing functions
 
