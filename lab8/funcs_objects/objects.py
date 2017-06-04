@@ -12,10 +12,13 @@ class Point(object):
 P1 = Point()
 P1.x = 5
 P1.y = 10
-print (P1.x, ',', P1.y)
+print (P1.x,',',P1.y)
 
 class Circle(object):
-    def __init__(self, center, radius):
+    def __init__(self, circleCenter = 0, circleRadius = 0):
         self.center = circleCenter
         self.radius = circleRadius
-    pass
+
+C1 = Circle()
+C1.center = (5,10)
+print (C1.center)
