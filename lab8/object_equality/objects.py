@@ -9,8 +9,12 @@ class Point(object):
     def __init__(self, x = 0, y = 0):
         self.x = x
         self.y = y
-    def __eq__(self):
-        pass
+        return self.x, self.y
+    def __eq__(self, other):
+        other.x = x
+        other.y = y
+        checkEqual = ((self.x == other.x) and (self.y == other.y))
+        return checkEqual
 
 class Circle(object):
     def __init__(self, center = Point(), radius = 0):

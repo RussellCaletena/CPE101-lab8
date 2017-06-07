@@ -7,8 +7,9 @@ from objects import *
 
 class TestCases(unittest.TestCase):
     def test_Point(self):
-        pass
-    
+        self.assertEqual(__eq__(other.x, other.y))
+        
+
     def test_equality(self):
         # Add test here
         pass
