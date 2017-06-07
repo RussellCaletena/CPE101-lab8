@@ -6,6 +6,7 @@
 
 import unittest
 from objects import *
+from funcs_objects import *
 
 class TestCases(unittest.TestCase):
     def test_Point(self):
@@ -27,7 +28,16 @@ class TestCases(unittest.TestCase):
         self.assertEqual(Circle2.center.x, 0)
         self.assertEqual(Circle2.center.y, 0)
         self.assertEqual(Circle2.radius, 5)
-    
+
+    def test_distance(self):
+        P1 = (0,0)
+        P2 = (4,0)
+        self.assertEqual(distance(P1, P2), 4)
+
+
+    def test_circles_overlap(self):
+        pass
+
    # Add other testing functions
 
 
