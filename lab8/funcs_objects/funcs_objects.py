@@ -12,16 +12,17 @@ from math import *
 #Point(4,0)  = (4,0)
 
 def distance(P1, P2):
-    euclidDistance = 0
     # This is the distance formula for finding the distance between 2 points
     euclidDistance = sqrt(((P2.x-P1.x)**2) + ((P2.y-P1.y)**2))
     return euclidDistance
 
 # Write this function using a relational operator and without using any sort of conditional
-def circles_overlap(argument1, argument2):
+def circles_overlap(Circle1, Circle2):
     # Two circles will overlap when the distance between their center points is less than the sum of the radii
-    sumRadii = radius1 + radius2
-    euclidDistance = sqr(((x2-x1)**2) + ((y2-y1)**2))
+    sumRadii = Circle1.radius + Circle2.radius
+    euclidDistance = sqrt(((Circle2.center.x-Circle1.center.x)**2) + ((Circle2.center.y-Circle1.center.y)**2))
+    overlap = euclidDistance < sumRadii
+    return overlap
     # if circles overlap:
         #return True
     # else:
