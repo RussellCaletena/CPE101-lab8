@@ -3,11 +3,14 @@
 # Name: Russell Caletena
 # Instructor: S. Einakian
 # Section: 5
+# Object_equality
 
 class Point(object):
     def __init__(self, x = 0, y = 0):
         self.x = x
         self.y = y
+    def __eq__(self):
+        pass
 
 class Circle(object):
     def __init__(self, center = Point(), radius = 0):
