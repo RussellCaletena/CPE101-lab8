@@ -11,8 +11,9 @@ class Point(object):
         self.y = y
 
     def __eq__(self, other):
-        checkEqual = ((self.x == other.x) and (self.y == other.y))
+        checkEqual = ((self.x == other.x) and (self.y == other.y) and (type(other) == Point))
         return checkEqual
+
     def __repr__(self):
         return ('({},{})'.format(self.x, self.y))
 
