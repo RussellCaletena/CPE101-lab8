@@ -13,6 +13,8 @@ class Point(object):
     def __eq__(self, other):
         checkEqual = ((self.x == other.x) and (self.y == other.y))
         return checkEqual
+    def __repr__(self):
+        return ('({},{})'.format(self.x, self.y))
 
 class Circle(object):
     def __init__(self, center = Point(), radius = 0):
