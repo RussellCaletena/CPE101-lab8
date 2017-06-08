@@ -7,8 +7,13 @@ from objects import *
 
 class TestCases(unittest.TestCase):
     def test_Point(self):
-        self.assertEqual(__eq__(other.x, other.y))
-        
+        aPoint = Point(5,5)
+        thePoint = Point(5,5)
+        self.assertEqual(aPoint, thePoint)
+
+        anotherPoint = Point(-2,2)
+        theOnePoint = Point()
+        self.assertNotEqual(anotherPoint, theOnePoint)
 
     def test_equality(self):
         # Add test here
